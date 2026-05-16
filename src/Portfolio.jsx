@@ -80,13 +80,13 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Frevia Global Freelance Platform",
-      category: "Web3 / Full-Stack",
+      category: "Full-Stack",
       desc: "A secure marketplace connecting global businesses with independent professionals, built with fully automated contract safety features.",
       images: [
-        "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+        "https://res.cloudinary.com/dz4xdwna1/image/upload/f_auto,q_auto,w_1200/v1778941791/Screenshot_from_2026-05-16_14-41-24_vwdnzn.png",
+        "https://res.cloudinary.com/dz4xdwna1/image/upload/f_auto,q_auto,w_1200/v1778941791/Screenshot_from_2026-05-16_14-41-47_sufqba.png",
       ],
-      link: "#"
+      link: "https://frevia-bfmc.vercel.app/"
     },
     {
       title: "Exclusive Premium Commerce Hub",
@@ -239,7 +239,7 @@ export default function Portfolio() {
                 href="#projects" 
                 className={`inline-flex items-center gap-2 text-sm font-bold px-7 py-4 rounded-xl shadow-[0_2px_6px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
               >
-                Explore Portfolio ↓
+                Explore Portfolio
               </a>
             </div>
           </motion.section>
