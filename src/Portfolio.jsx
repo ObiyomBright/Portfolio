@@ -93,10 +93,11 @@ export default function Portfolio() {
       category: "E-Commerce Suite",
       desc: "A high-performance online storefront featuring robust application state management, live inventory calculations, and fast user checkout pipelines.",
       images: [
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=600&auto=format&fit=crop"
+        "https://res.cloudinary.com/dz4xdwna1/image/upload/f_auto,q_auto,w_1200/v1778944136/Screenshot_from_2026-05-16_16-04-38_stmeor.png",
+        "https://res.cloudinary.com/dz4xdwna1/image/upload/f_auto,q_auto,w_1200/v1778944132/Screenshot_from_2026-05-16_16-05-20_iiyuxh.png",
+        "https://res.cloudinary.com/dz4xdwna1/image/upload/f_auto,q_auto,w_1200/v1778944132/Screenshot_from_2026-05-16_16-05-35_vrz6oh.png",
       ],
-      link: "https://e-commerce-site-r8rl.onrender.com/"
+      link: "https://e-commerce-site-r8rl.onrender.com"
     },
     {
       title: "Intelligent Phishing Detection Engine",
