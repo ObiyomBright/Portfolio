@@ -313,7 +313,7 @@ export default function Portfolio() {
                             key={idx}
                             className={`${cCardSm} p-5 text-center`}
                         >
-                            <p className={`text-4xl font-black tracking-tight m-0 ${dark ? 'text-emerald-400' : 'text-emerald-600'}`}>{stat.value}</p>
+                            <p className={`sm:text-2xl lg:text-4xl font-black tracking-tight m-0 ${dark ? 'text-emerald-400' : 'text-emerald-600'}`}>{stat.value}</p>
                             <p className={`text-xs font-semibold mt-1.5 m-0 ${cMuted}`}>{stat.label}</p>
                         </motion.div>
                     ))}
@@ -386,12 +386,12 @@ export default function Portfolio() {
                         initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, margin: "-100px" }}
                         className="grid grid-cols-1 lg:grid-cols-3 gap-4 class-grid-experience"
                     >
-                        <div className={`${cCardSm} p-6 flex flex-col justify-between gap-4`}>
+                        {/* <div className={`${cCardSm} p-6 flex flex-col justify-between gap-4`}>
                             <p className={`text-sm leading-relaxed font-medium m-0 ${cMuted}`}>
                                 A high-level breakdown of my development history, engineering milestones, and ongoing team involvement.
                             </p>
                             <div className="text-xs font-bold text-slate-400 tracking-wider">VERIFIED WORK HISTORY</div>
-                        </div>
+                        </div> */}
 
                         <div className={`${cCardSm} p-6 flex flex-col gap-6 lg:col-span-2`}>
                             {timeline.map((item, idx) => (
