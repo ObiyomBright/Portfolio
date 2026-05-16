@@ -259,7 +259,7 @@ export default function Portfolio() {
                         <div className="hero-flex" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1.5rem' }}>
                             <div style={{ maxWidth: '36rem' }}>
                                 <span style={{ fontSize: '0.65rem', fontFamily: 'ui-monospace, monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: t.textMuted, background: t.mutedBg, padding: '0.375rem 0.75rem', borderRadius: '0.375rem', border: `1px solid ${t.mutedBorder}`, fontWeight: 700, display: 'inline-block' }}>
-                                    Based in Nigeria — Remote Worldwide
+                                    Open to International Contracts & Remote Collaborations
                                 </span>
                                 <h1 className="hero-title" style={{ fontSize: '3.5rem', fontWeight: 900, letterSpacing: '-0.03em', color: t.textStrong, lineHeight: 1.1, paddingTop: '0.5rem', margin: '0.5rem 0' }}>
                                     Hi, I'm Bright.<br />
@@ -516,7 +516,7 @@ export default function Portfolio() {
                     </div>
 
                     <div style={{ ...cardSm, padding: '1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', gap: '0.125rem' }}>
-                        <span style={{ fontSize: '0.75rem', fontFamily: 'ui-monospace, monospace', fontWeight: 700,  color: t.footerMeta }}>© {new Date().getFullYear()} BRIGHT.DEV</span>
+                        <span style={{ fontSize: '0.75rem', fontFamily: 'ui-monospace, monospace', fontWeight: 700, color: t.footerMeta }}>© {new Date().getFullYear()} BRIGHT.DEV</span>
                         {/* <span style={{ fontSize: '0.625rem', fontFamily: 'ui-monospace, monospace', color: t.footerSub, letterSpacing: '0.1em' }}>HIGH-CONTRAST BENTO V5</span> */}
                         <span style={{ fontSize: '0.75rem', fontWeight: 500, color: t.footerSub }}>
                             Crafted with React & Framer Motion
