@@ -26,7 +26,7 @@ const GithubIcon = () => (
         fill="currentColor"
         stroke="none"
     >
-        <path d="M12 .5C5.73.5.75 5.62.75 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.26.79-.57v-2.05c-3.2.72-3.88-1.4-3.88-1.4-.53-1.38-1.3-1.75-1.3-1.75-1.07-.75.08-.73.08-.73 1.18.09 1.8 1.24 1.8 1.24 1.05 1.85 2.75 1.32 3.42 1.01.1-.78.41-1.32.75-1.62-2.55-.3-5.23-1.32-5.23-5.86 0-1.3.45-2.37 1.19-3.2-.12-.3-.52-1.52.11-3.17 0 0 .97-.32 3.18 1.22a10.8 10.8 0 0 1 5.79 0c2.21-1.54 3.18-1.22 3.18-1.22.63 1.65.23 2.87.11 3.17.74.83 1.19 1.9 1.19 3.2 0 4.56-2.69 5.56-5.25 5.85.42.36.79 1.08.79 2.19v3.25c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.25 12C23.25 5.62 18.27.5 12 .5z"/>
+        <path d="M12 .5C5.73.5.75 5.62.75 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.26.79-.57v-2.05c-3.2.72-3.88-1.4-3.88-1.4-.53-1.38-1.3-1.75-1.3-1.75-1.07-.75.08-.73.08-.73 1.18.09 1.8 1.24 1.8 1.24 1.05 1.85 2.75 1.32 3.42 1.01.1-.78.41-1.32.75-1.62-2.55-.3-5.23-1.32-5.23-5.86 0-1.3.45-2.37 1.19-3.2-.12-.3-.52-1.52.11-3.17 0 0 .97-.32 3.18 1.22a10.8 10.8 0 0 1 5.79 0c2.21-1.54 3.18-1.22 3.18-1.22.63 1.65.23 2.87.11 3.17.74.83 1.19 1.9 1.19 3.2 0 4.56-2.69 5.56-5.25 5.85.42.36.79 1.08.79 2.19v3.25c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.25 12C23.25 5.62 18.27.5 12 .5z" />
     </svg>
 );
 
@@ -38,7 +38,7 @@ const LinkedinIcon = () => (
         fill="currentColor"
         stroke="none"
     >
-        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.66H9.31V9h3.41v1.56h.05c.47-.9 1.61-1.86 3.31-1.86 3.54 0 4.19 2.33 4.19 5.35v6.4zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/>
+        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.66H9.31V9h3.41v1.56h.05c.47-.9 1.61-1.86 3.31-1.86 3.54 0 4.19 2.33 4.19 5.35v6.4zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" />
     </svg>
 );
 // --- AUTO-ROTATING IMAGE SLIDER ---
@@ -96,8 +96,24 @@ export default function Portfolio() {
     ];
 
     const timeline = [
-        { role: "Full-Stack Software Engineer", company: "Technical Enterprise", period: "Present", desc: "Building responsive web applications, writing secure backend APIs, and optimizing overall page speed and load times using PHP and modern JavaScript tools." },
-        { role: "Web3 Developer & Contributor", company: "Decentralized Ecosystems", period: "2025 - 2026", desc: "Created decentralized user interfaces, integrated frontend clients with secure smart contracts, and customized secure financial transaction structures." }
+        {
+            role: "Full-Stack Software Engineer",
+            company: "Egoras",
+            period: "2025 - Present",
+            desc: "Working on scalable fintech and web platforms, building full-stack features including dashboards, API integrations, authentication systems, and performance-optimized interfaces. Focused on improving reliability, security, and overall user experience across production systems."
+        },
+        {
+            role: "Full-Stack Software Developer",
+            company: "Lofloxy",
+            period: "2023 - 2025",
+            desc: "Worked on building and maintaining e-commerce and business web platforms, developing both frontend interfaces and backend services. Handled API development, database management, and implementation of responsive UI systems for production use."
+        },
+        {
+            role: "Web Developer",
+            company: "OYOL Computer Consult",
+            period: "2022 - 2023",
+            desc: "Built client websites and internal tools during industrial training, focusing on responsive design, backend integration with PHP and MySQL, and improving website performance and usability."
+        }
     ];
 
     const projects = [
@@ -122,36 +138,36 @@ export default function Portfolio() {
             ],
             link: "https://e-commerce-site-r8rl.onrender.com"
         },
-        {
-            title: "Intelligent Phishing Detection Engine",
-            category: "Cybersecurity Dashboard",
-            desc: "An enterprise-grade protection screen configured to analyze live website request architectures and prevent network security vulnerabilities.",
-            images: [
-                "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
-            ],
-            link: "#"
-        },
-        {
-            title: "Real-Time Collaborative Workplace",
-            category: "SaaS Application",
-            desc: "A cloud-connected utility engine that helps distributed business teams organize data pipelines, assign operational checklists, and view project charts metrics.",
-            images: [
-                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=600&auto=format&fit=crop"
-            ],
-            link: "#"
-        },
-        {
-            title: "Automated Data Analysis Pipeline",
-            category: "Backend Infrastructure",
-            desc: "A secure script array built to poll heavy background records hourly, organize deep data indexes, and deliver comprehensive analytical reports directly to core servers.",
-            images: [
-                "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop"
-            ],
-            link: "#"
-        }
+        // {
+        //     title: "Intelligent Phishing Detection Engine",
+        //     category: "Cybersecurity Dashboard",
+        //     desc: "An enterprise-grade protection screen configured to analyze live website request architectures and prevent network security vulnerabilities.",
+        //     images: [
+        //         "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop",
+        //         "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
+        //     ],
+        //     link: "#"
+        // },
+        // {
+        //     title: "Real-Time Collaborative Workplace",
+        //     category: "SaaS Application",
+        //     desc: "A cloud-connected utility engine that helps distributed business teams organize data pipelines, assign operational checklists, and view project charts metrics.",
+        //     images: [
+        //         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+        //         "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=600&auto=format&fit=crop"
+        //     ],
+        //     link: "#"
+        // },
+        // {
+        //     title: "Automated Data Analysis Pipeline",
+        //     category: "Backend Infrastructure",
+        //     desc: "A secure script array built to poll heavy background records hourly, organize deep data indexes, and deliver comprehensive analytical reports directly to core servers.",
+        //     images: [
+        //         "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop",
+        //         "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop"
+        //     ],
+        //     link: "#"
+        // }
     ];
 
     useEffect(() => {
@@ -434,12 +450,6 @@ export default function Portfolio() {
                         initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, margin: "-100px" }}
                         className="grid grid-cols-1 lg:grid-cols-3 gap-4 class-grid-experience"
                     >
-                        {/* <div className={`${cCardSm} p-6 flex flex-col justify-between gap-4`}>
-                            <p className={`text-sm leading-relaxed font-medium m-0 ${cMuted}`}>
-                                A high-level breakdown of my development history, engineering milestones, and ongoing team involvement.
-                            </p>
-                            <div className="text-xs font-bold text-slate-400 tracking-wider">VERIFIED WORK HISTORY</div>
-                        </div> */}
 
                         <div className={`${cCardSm} p-6 flex flex-col gap-6 lg:col-span-2`}>
                             {timeline.map((item, idx) => (
