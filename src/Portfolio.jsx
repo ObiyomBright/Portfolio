@@ -403,9 +403,9 @@ export default function Portfolio() {
                     <p className={`text-sm font-bold m-0 ${dark ? 'text-emerald-400' : 'text-emerald-600'}`}>{item.company}</p>
                     <p className={`text-sm leading-relaxed font-medium mt-2 m-0 ${cMuted}`}>{item.desc}</p>
                   </div>
-                  <span className={`text-xs font-semibold px-3 py-1.5 rounded-lg border shrink-0 whitespace-nowrap ${dark ? 'bg-[#141419] text-slate-400 border-[#1c1c21]' : 'bg-slate-100 text-slate-600 border-slate-200'}`}>
+                  {/* <span className={`text-xs font-semibold px-3 py-1.5 rounded-lg border shrink-0 whitespace-nowrap ${dark ? 'bg-[#141419] text-slate-400 border-[#1c1c21]' : 'bg-slate-100 text-slate-600 border-slate-200'}`}>
                     {item.period}
-                  </span>
+                  </span> */}
                 </div>
               ))}
             </div>
