@@ -31,7 +31,7 @@ function ProjectImageSlider({ images, title }) {
   }, [images]);
 
   return (
-    <div className="w-full h-52 rounded-xl overflow-hidden bg-slate-200 relative border border-slate-200 shadow-inner" style={{ background: 'var(--slider-bg)' }}>
+    <div className="w-full h-60 rounded-xl overflow-hidden bg-slate-200 relative border border-slate-200 shadow-inner" style={{ background: 'var(--slider-bg)' }}>
       {images.map((imgUrl, idx) => (
         <img
           key={idx}
@@ -56,14 +56,14 @@ function ProjectImageSlider({ images, title }) {
 export default function Portfolio() {
   const [dark, setDark] = useState(true);
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = ["Full-Stack Engineer", "Frontend Specialist", "Backend Architect", "Web3 Developer"];
 
+  const roles = ["Full-Stack Engineer", "Frontend Specialist", "Backend Architect", "Web3 Developer"];
   const skills = [
     { category: "User Experience & Frontend", items: ["React", "Vite", "Next.js", "Tailwind CSS", "TypeScript"] },
     { category: "Server Infrastructure & Databases", items: ["Node.js", "Express", "PHP", "Flask", "MySQL", "PostgreSQL", "MongoDB"] },
     { category: "Workflow Systems & Security", items: ["Git", "GitHub", "Linux / Ubuntu", "RESTful APIs", "Smart Contracts"] }
   ];
-
+  
   const timeline = [
     { role: "Full-Stack Software Engineer", company: "Technical Enterprise", period: "Present", desc: "Building responsive web applications, writing secure backend APIs, and optimizing overall page speed and load times using PHP and modern JavaScript tools." },
     { role: "Web3 Developer & Contributor", company: "Decentralized Ecosystems", period: "2025 - 2026", desc: "Created decentralized user interfaces, integrated frontend clients with secure smart contracts, and customized secure financial transaction structures." }
@@ -103,7 +103,7 @@ export default function Portfolio() {
     {
       title: "Real-Time Collaborative Workplace",
       category: "SaaS Application",
-      desc: "An cloud-connected utility engine that helps distributed business teams organize data pipelines, assign operational checklists, and view project charts metrics.",
+      desc: "A cloud-connected utility engine that helps distributed business teams organize data pipelines, assign operational checklists, and view project charts metrics.",
       images: [
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=600&auto=format&fit=crop"
@@ -124,43 +124,31 @@ export default function Portfolio() {
 
   // ─── Theme token maps ───────────────────────────────────────────────────────
   const t = {
-    // page
     pageBg:       dark ? '#070708'   : '#f8fafc',
     pageText:     dark ? '#f1f5f9'   : '#0f172a',
-    // cards
     cardBg:       dark ? '#0d0d11'   : '#ffffff',
     cardBorder:   dark ? '#1c1c21'   : 'rgba(226,232,240,0.8)',
-    // secondary bg (pill badges, icon buttons, resume box)
     mutedBg:      dark ? '#141419'   : 'rgba(241,245,249,0.6)',
     mutedBorder:  dark ? '#1c1c21'   : 'rgba(226,232,240,0.6)',
-    // text colours
     textMuted:    dark ? '#94a3b8'   : '#475569',
     textStrong:   dark ? '#ffffff'   : '#0f172a',
-    // grid overlay
     gridLine:     dark ? '#131317'   : '#e2e8f0',
     gridOpacity:  dark ? '0.4'       : '0.7',
-    // tag / badge
     tagBg:        dark ? '#141419'   : '#f1f5f9',
     tagBorder:    dark ? 'rgba(28,28,33,0.6)' : 'rgba(226,232,240,0.5)',
     tagText:      dark ? '#e2e8f0'   : '#1e293b',
-    // icon-button
     iconBtnBg:    dark ? '#16161c'   : '#f1f5f9',
     iconBtnBorder:dark ? '#24242b'   : '#e2e8f0',
     iconBtnHover: dark ? '#1e1e26'   : '#e2e8f0',
-    // divider
     divider:      dark ? 'rgba(15,15,20,0.5)' : '#f1f5f9',
     dividerNav:   dark ? 'rgba(15,15,20,1)'   : '#f1f5f9',
-    // CTA (hero button & footer CTA)
     ctaBg:        dark ? '#ffffff'   : '#0f172a',
     ctaText:      dark ? '#000000'   : '#ffffff',
     ctaHover:     dark ? '#f1f5f9'   : '#1e293b',
-    // emerald project tag bg
     projTagBg:    dark ? 'rgba(6,78,59,0.3)'  : '#ecfdf5',
     projTagBorder:dark ? 'rgba(6,78,59,0.4)'  : '#bbf7d0',
-    // footer meta
     footerMeta:   dark ? '#52525b'   : '#94a3b8',
     footerSub:    dark ? '#3f3f46'   : '#cbd5e1',
-    // slider bg
     sliderBg:     dark ? '#0f172a'   : '#e2e8f0',
   };
 
@@ -169,7 +157,6 @@ export default function Portfolio() {
     hidden: { opacity: 0, y: 35 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
-
   const staggerContainer = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.12 } }
@@ -193,7 +180,7 @@ export default function Portfolio() {
   const cardSm = { ...card, borderRadius: '1rem' };
 
   return (
-    <div style={{
+    <div className="portfolio-page-root" style={{
       minHeight: '100vh',
       background: t.pageBg,
       color: t.pageText,
@@ -218,7 +205,7 @@ export default function Portfolio() {
 
         {/* --- STICKY NAVIGATION BAR --- */}
         <header style={{ position: 'sticky', top: '1rem', zIndex: 50, display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 2fr', gap: '1rem' }}>
+          <div className="grid-header-inner" style={{ display: 'grid', gridTemplateColumns: '2fr 2fr', gap: '1rem' }}>
             {/* Status pill */}
             <div style={{ ...cardSm, borderRadius: '1rem', padding: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', backdropFilter: 'blur(20px)', background: dark ? 'rgba(13,13,17,0.7)' : 'rgba(255,255,255,0.7)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -230,7 +217,7 @@ export default function Portfolio() {
             </div>
 
             {/* Nav + theme toggle */}
-            <div style={{ ...cardSm, borderRadius: '1rem', padding: '0.625rem', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '1.5rem', backdropFilter: 'blur(20px)', background: dark ? 'rgba(13,13,17,0.7)' : 'rgba(255,255,255,0.7)' }}>
+            <div className="nav-card-inner" style={{ ...cardSm, borderRadius: '1rem', padding: '0.625rem', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '1.5rem', backdropFilter: 'blur(20px)', background: dark ? 'rgba(13,13,17,0.7)' : 'rgba(255,255,255,0.7)' }}>
               <nav style={{ display: 'flex', gap: '0.25rem', fontFamily: 'ui-monospace, monospace', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase' }}>
                 {['Projects', 'Experience', 'Skills'].map((label, i) => (
                   <a key={i} href={`#${label.toLowerCase()}`} style={{ padding: '0.5rem 0.75rem', borderRadius: '0.5rem', color: t.textMuted, textDecoration: 'none', transition: 'color 0.2s' }}
@@ -260,7 +247,7 @@ export default function Portfolio() {
         </header>
 
         {/* --- HERO AREA WITH INTEGRATED PICTURE --- */}
-        <main style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem' }}>
+        <main className="grid-main" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem' }}>
 
           <motion.section
             initial="hidden" animate="visible" variants={fadeInUp}
@@ -268,13 +255,13 @@ export default function Portfolio() {
           >
             <div style={{ position: 'absolute', top: 0, right: 0, width: '18rem', height: '18rem', background: 'rgba(16,185,129,0.05)', borderRadius: '9999px', filter: 'blur(90px)', pointerEvents: 'none' }} />
 
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1.5rem' }}>
+            <div className="hero-flex" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1.5rem' }}>
               <div style={{ maxWidth: '36rem' }}>
                 <span style={{ fontSize: '0.65rem', fontFamily: 'ui-monospace, monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: t.textMuted, background: t.mutedBg, padding: '0.375rem 0.75rem', borderRadius: '0.375rem', border: `1px solid ${t.mutedBorder}`, fontWeight: 700, display: 'inline-block' }}>
                   Based in Nigeria — Remote Worldwide
                 </span>
-                <h1 style={{ fontSize: '3.5rem', fontWeight: 900, letterSpacing: '-0.03em', color: t.textStrong, lineHeight: 1.1, paddingTop: '0.5rem', margin: '0.5rem 0' }}>
-                  Hi, I'm Bright. <br />
+                <h1 className="hero-title" style={{ fontSize: '3.5rem', fontWeight: 900, letterSpacing: '-0.03em', color: t.textStrong, lineHeight: 1.1, paddingTop: '0.5rem', margin: '0.5rem 0' }}>
+                  Hi, I'm Bright.<br />
                   <span style={{ color: dark ? '#34d399' : '#059669', display: 'block', marginTop: '0.25rem', transition: 'all 0.5s' }}>
                     {roles[roleIndex]}
                   </span>
@@ -286,8 +273,8 @@ export default function Portfolio() {
 
               {/* Profile picture */}
               <div style={{ position: 'relative', flexShrink: 0 }}>
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, #10b981, #14b8a6)', borderRadius: '1rem', filter: 'blur(8px)', opacity: 0.4 }} />
-                <div style={{ position: 'relative', width: '8rem', height: '8rem', borderRadius: '1rem', overflow: 'hidden', border: `2px solid ${t.cardBorder}`, background: t.mutedBg }}>
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, #10b981, #14b8a6)', borderRadius: '1.25rem', filter: 'blur(8px)', opacity: 0.4 }} />
+                <div style={{ position: 'relative', width: '10.5rem', height: '10.5rem', borderRadius: '1.25rem', overflow: 'hidden', border: `2px solid ${t.cardBorder}`, background: t.mutedBg }}>
                   <img
                     src="/profile.jpg" alt="Bright"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -370,6 +357,7 @@ export default function Portfolio() {
         {/* --- STATS LAYER --- */}
         <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
+          className="grid-stats"
           style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}
         >
           {[
@@ -401,6 +389,7 @@ export default function Portfolio() {
 
           <motion.div
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={staggerContainer}
+            className="grid-projects"
             style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}
           >
             {projects.map((project, idx) => (
@@ -451,6 +440,7 @@ export default function Portfolio() {
         <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp}
           id="experience"
+          className="grid-experience"
           style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '1rem' }}
         >
           <div style={{ ...cardSm, padding: '1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -465,7 +455,7 @@ export default function Portfolio() {
 
           <div style={{ ...cardSm, padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {timeline.map((item, idx) => (
-              <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', paddingBottom: idx < timeline.length - 1 ? '1.25rem' : 0, borderBottom: idx < timeline.length - 1 ? `1px solid ${t.divider}` : 'none' }}>
+              <div key={idx} className="experience-row" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', paddingBottom: idx < timeline.length - 1 ? '1.25rem' : 0, borderBottom: idx < timeline.length - 1 ? `1px solid ${t.divider}` : 'none' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', maxWidth: '36rem' }}>
                   <h4 style={{ fontSize: '1.125rem', fontWeight: 900, letterSpacing: '-0.02em', color: t.textStrong, margin: 0 }}>{item.role}</h4>
                   <p style={{ fontSize: '0.875rem', fontFamily: 'ui-monospace, monospace', fontWeight: 700, color: dark ? '#34d399' : '#059669', margin: 0 }}>{item.company}</p>
@@ -483,6 +473,7 @@ export default function Portfolio() {
         <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}
           id="skills"
+          className="grid-skills"
           style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}
         >
           {skills.map((skillGroup, idx) => (
@@ -502,9 +493,10 @@ export default function Portfolio() {
         {/* --- FOOTER CONTACT CARD --- */}
         <motion.footer
           initial={{ opacity: 0, scale: 0.98 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
+          className="grid-footer"
           style={{ display: 'grid', gridTemplateColumns: '3fr 1fr', gap: '1rem' }}
         >
-          <div style={{ ...cardSm, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
+          <div className="footer-card-inner" style={{ ...cardSm, padding: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1.5rem' }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 900, letterSpacing: '-0.02em', color: t.textStrong, margin: 0 }}>Let's build something beautiful together.</h3>
               <p style={{ fontSize: '0.875rem', color: t.textMuted, fontWeight: 500, margin: 0 }}>Available for specialized project consulting, engineering contracts, or corporate team roles.</p>
@@ -534,6 +526,56 @@ export default function Portfolio() {
         @keyframes pulse {
           0%, 100% { opacity: 1; }
           50% { opacity: 0.5; }
+        }
+        @media (max-width: 768px) {
+          .portfolio-page-root {
+            padding: 1rem !important;
+          }
+          .grid-header-inner {
+            grid-template-columns: 1fr !important;
+          }
+          .nav-card-inner {
+            justify-content: space-between !important;
+            gap: 1rem !important;
+            width: 100% !important;
+          }
+          .grid-main {
+            grid-template-columns: 1fr !important;
+          }
+          .hero-flex {
+            flex-direction: column-reverse !important;
+            align-items: center !important;
+            text-align: center !important;
+            gap: 2rem !important;
+          }
+          .hero-title {
+            font-size: 2.5rem !important;
+          }
+          .grid-stats {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+          .grid-projects {
+            grid-template-columns: 1fr !important;
+          }
+          .grid-experience {
+            grid-template-columns: 1fr !important;
+          }
+          .experience-row {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 0.5rem !important;
+          }
+          .grid-skills {
+            grid-template-columns: 1fr !important;
+          }
+          .grid-footer {
+            grid-template-columns: 1fr !important;
+          }
+          .footer-card-inner {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 1.5rem !important;
+          }
         }
       `}</style>
     </div>
