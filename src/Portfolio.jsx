@@ -524,7 +524,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className={`p-6 flex flex-col justify-center items-center text-center gap-1.5 ${cCardSm}`}>
-                        <span className={`text-sm font-bold ${dark ? 'text-slate-100' : 'text-slate-800'}`}>© {new Date().getFullYear()} BRIGHT.DEV</span>
+                        <span className={`text-sm font-bold ${dark ? 'text-slate-100' : 'text-slate-800'}`}>© {new Date().getFullYear()} BRIGHT</span>
                         <span className={`text-xs font-medium ${dark ? 'text-slate-400' : 'text-slate-500'}`}>Crafted with React & Framer Motion</span>
                     </div>
                 </motion.footer>
