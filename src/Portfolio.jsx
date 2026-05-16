@@ -19,19 +19,28 @@ const FileTextIcon = () => (
 );
 
 const GithubIcon = () => (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9 19c-4.3 1.4-4.3-2.2-6-3m12 5v-3.2c0-.9.3-1.6.8-2.2-2.7-.3-5.5-1.3-5.5-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.3a11.5 11.5 0 0 1 6.2 0C21 4.7 22 5 22 5c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.8 5.5-5.5 5.8.4.4.8 1.2.8 2.4V21"></path>
+    <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+    >
+        <path d="M12 .5C5.73.5.75 5.62.75 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.26.79-.57v-2.05c-3.2.72-3.88-1.4-3.88-1.4-.53-1.38-1.3-1.75-1.3-1.75-1.07-.75.08-.73.08-.73 1.18.09 1.8 1.24 1.8 1.24 1.05 1.85 2.75 1.32 3.42 1.01.1-.78.41-1.32.75-1.62-2.55-.3-5.23-1.32-5.23-5.86 0-1.3.45-2.37 1.19-3.2-.12-.3-.52-1.52.11-3.17 0 0 .97-.32 3.18 1.22a10.8 10.8 0 0 1 5.79 0c2.21-1.54 3.18-1.22 3.18-1.22.63 1.65.23 2.87.11 3.17.74.83 1.19 1.9 1.19 3.2 0 4.56-2.69 5.56-5.25 5.85.42.36.79 1.08.79 2.19v3.25c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.25 12C23.25 5.62 18.27.5 12 .5z"/>
     </svg>
 );
 
 const LinkedinIcon = () => (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-        <rect x="2" y="9" width="4" height="12"></rect>
-        <circle cx="4" cy="4" r="2"></circle>
+    <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+    >
+        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.66H9.31V9h3.41v1.56h.05c.47-.9 1.61-1.86 3.31-1.86 3.54 0 4.19 2.33 4.19 5.35v6.4zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/>
     </svg>
 );
-
 // --- AUTO-ROTATING IMAGE SLIDER ---
 function ProjectImageSlider({ images, title, dark }) {
     const [currentIdx, setCurrentIdx] = useState(0);
