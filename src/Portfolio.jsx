@@ -18,6 +18,20 @@ const FileTextIcon = () => (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
 );
 
+const GithubIcon = () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 19c-4.3 1.4-4.3-2.2-6-3m12 5v-3.2c0-.9.3-1.6.8-2.2-2.7-.3-5.5-1.3-5.5-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.3a11.5 11.5 0 0 1 6.2 0C21 4.7 22 5 22 5c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.3 0 4.5-2.8 5.5-5.5 5.8.4.4.8 1.2.8 2.4V21"></path>
+    </svg>
+);
+
+const LinkedinIcon = () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+    </svg>
+);
+
 // --- AUTO-ROTATING IMAGE SLIDER ---
 function ProjectImageSlider({ images, title, dark }) {
     const [currentIdx, setCurrentIdx] = useState(0);
@@ -278,11 +292,11 @@ export default function Portfolio() {
                             </a>
                         </div>
 
-                        <div className="flex gap-2 text-sm font-semibold pt-2">
+                        {/* <div className="flex gap-2 text-sm font-semibold pt-2">
                             {[
-                                ['GitHub', 'https://github.com'],
-                                ['LinkedIn', 'https://linkedin.com']
-                            ].map(([label, href]) => (
+                                ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
+                                ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon]
+                            ].map(([label, href, Icon]) => (
                                 <a
                                     key={label}
                                     href={href}
@@ -290,7 +304,32 @@ export default function Portfolio() {
                                     rel="noreferrer"
                                     className={`flex-1 text-center py-3 rounded-xl border text-sm transition-colors duration-200 ${cMuted} ${dark ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500' : 'bg-slate-50 border-slate-200 hover:border-emerald-500'}`}
                                 >
-                                    {label}
+                                  <Icon />  {label}
+                                </a>
+                            ))}
+                        </div> */}
+
+                        <div className="flex gap-3 text-sm font-semibold pt-2">
+                            {[
+                                ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
+                                ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon]
+                            ].map(([label, href, Icon]) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border text-sm transition-all duration-200 group ${cMuted
+                                        } ${dark
+                                            ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500 hover:-translate-y-0.5'
+                                            : 'bg-slate-50 border-slate-200 hover:border-emerald-500 hover:-translate-y-0.5'
+                                        }`}
+                                >
+                                    <span className="flex items-center justify-center">
+                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 transition-all duration-200 group-hover:scale-110" />
+                                    </span>
+
+                                    <span className="text-xs sm:text-sm">{label}</span>
                                 </a>
                             ))}
                         </div>
