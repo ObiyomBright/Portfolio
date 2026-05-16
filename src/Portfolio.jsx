@@ -516,7 +516,7 @@ export default function Portfolio() {
                             <p className={`text-sm font-medium m-0 ${cMuted}`}>Available for specialized project consulting, engineering contracts, or corporate team roles.</p>
                         </div>
                         <a
-                            href="mailto:contact@bright.dev"
+                            href="mailto:brightobiyom2@gmail.com"
                             className={`shrink-0 whitespace-nowrap px-7 py-4 rounded-xl font-bold text-sm transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
                         >
                             Get In Touch
