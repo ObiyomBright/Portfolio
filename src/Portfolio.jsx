@@ -415,14 +415,24 @@ export default function Portfolio() {
 
                 {/* --- PROJECTS --- */}
                 <section id="projects" className="flex flex-col gap-6">
-                    <div className={`border-b-2 pb-3 flex items-baseline justify-between ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
+                    {/* <div className={`border-b-2 pb-3 flex items-baseline justify-between ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
                         <h2 className={`text-3xl font-black ${cStrong}`}>
                             Featured Production Applications
                         </h2>
                         <span className={`text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
                             Total Showcase ({projects.length})
                         </span>
-                    </div>
+                    </div> */}
+
+                    <div className={`border-b-2 pb-3 flex items-baseline justify-between ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
+  <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
+    Featured Production Applications
+  </h2>
+
+  <span className={`text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
+    Total Showcase ({projects.length})
+  </span>
+</div>
 
                     <motion.div
                         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: "-60px" }} transition={{ staggerChildren: 0.12 }}
