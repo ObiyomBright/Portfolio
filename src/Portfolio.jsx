@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Download } from "lucide-react";
 import { motion } from 'framer-motion';
 
 // --- PREMIUM CUSTOM INLINE SVG ICONS ---
@@ -335,6 +336,7 @@ export default function Portfolio() {
                                 className="inline-flex items-center justify-center py-3 px-4 rounded-xl bg-emerald-600 text-white font-semibold text-sm transition-colors duration-200 hover:bg-emerald-700"
                             >
                                 Download Resume (PDF)
+                                <Download className="ml-2 w-4 h-4" />
                             </a>
                         </div>
 
@@ -514,9 +516,9 @@ export default function Portfolio() {
                 {/* --- TECH SKILLS GRID --- */}
                 <section id="skills" className="flex flex-col gap-6">
                     <div className={`border-b-2 pb-3 ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
-                       <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
-  Technical Skills Matrices
-</h2>
+                        <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
+                            Technical Skills Matrices
+                        </h2>
                     </div>
 
                     <motion.div
