@@ -309,9 +309,16 @@ export default function Portfolio() {
                             <p className={`text-xs leading-relaxed font-medium ${cMuted}`}>
                                 Detailed background layout covering my technical proficiency matrices and professional experience histories.
                             </p>
+                            {/* <a
+                                href="https://drive.google.com/file/d/12-I88Qpx20wDfTpoQ5qX8kABr5vODiBd/view?usp=sharing"
+                                download="Bright_Obiyom_Software_Engineer_Resume.pdf"
+                                className="inline-flex items-center justify-center py-3 px-4 rounded-xl bg-emerald-600 text-white font-semibold text-sm transition-colors duration-200 hover:bg-emerald-700"
+                            >
+                                Download Resume (PDF)
+                            </a> */}
+
                             <a
-                                href="/resume.pdf"
-                                download="Bright_Software_Engineer_Resume.pdf"
+                                href="https://drive.google.com/uc?export=download&id=12-I88Qpx20wDfTpoQ5qX8kABr5vODiBd"
                                 className="inline-flex items-center justify-center py-3 px-4 rounded-xl bg-emerald-600 text-white font-semibold text-sm transition-colors duration-200 hover:bg-emerald-700"
                             >
                                 Download Resume (PDF)
