@@ -275,10 +275,10 @@ export default function Portfolio() {
                             </div>
                         </div>
 
-                        <div className="pt-6">
+                        <div className="pt-6 flex">
                             <a
                                 href="#projects"
-                                className={`inline-flex items-center gap-2 text-sm font-bold px-7 py-4 rounded-xl shadow-[0_2px_6px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+                                className={`mx-auto sm:mx-auto md:mx-0 inline-flex items-center gap-2 text-sm font-bold px-7 py-4 rounded-xl shadow-[0_2px_6px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
                             >
                                 Explore Portfolio
                             </a>
