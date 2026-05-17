@@ -390,7 +390,7 @@ export default function Portfolio() {
                         <h2 className={`text-3xl font-black ${cStrong}`}>
                             Featured Production Applications
                         </h2>
-                        <span className={`sm:text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
+                        <span className={`text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
                             Total Showcase ({projects.length})
                         </span>
                     </div>
