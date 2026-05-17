@@ -266,9 +266,10 @@ export default function Portfolio() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl blur-md opacity-40" />
                                 <div className={`relative w-32 h-32 rounded-2xl overflow-hidden border ${dark ? 'border-[#1c1c21] bg-[#141419]' : 'border-slate-200/80 bg-slate-100/60'}`}>
                                     <img
-                                        src="/profile.jpg" alt="Bright"
+                                        src="https://res.cloudinary.com/dz4xdwna1/image/upload/w_500,h_500,c_fill/f_auto,q_auto/v1779023717/IMG_20260517_141240_b4htj8.jpg"
+                                        loading='lazy'
+                                        alt="Bright"
                                         className="w-full h-full object-cover"
-                                        onError={e => { e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop"; }}
                                     />
                                 </div>
                             </div>
@@ -389,7 +390,7 @@ export default function Portfolio() {
                         <h2 className={`text-3xl font-black ${cStrong}`}>
                             Featured Production Applications
                         </h2>
-                        <span className={`text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
+                        <span className={`sm:text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
                             Total Showcase ({projects.length})
                         </span>
                     </div>
