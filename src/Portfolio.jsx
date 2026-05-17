@@ -369,7 +369,7 @@ export default function Portfolio() {
                             {[
                                 ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
                                 ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon],
-                                ['Twitter', 'https://x.com/yourhandle', XIcon]
+                                ['Twitter', 'https://x.com/ObiyomB', XIcon]
                             ].map(([label, href, Icon]) => (
                                 <a
                                     key={label}
