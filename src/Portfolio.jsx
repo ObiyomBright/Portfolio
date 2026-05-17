@@ -41,6 +41,19 @@ const LinkedinIcon = () => (
         <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.66H9.31V9h3.41v1.56h.05c.47-.9 1.61-1.86 3.31-1.86 3.54 0 4.19 2.33 4.19 5.35v6.4zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z" />
     </svg>
 );
+
+const XIcon = () => (
+    <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+    >
+        <path d="M18.244 2H21.5l-7.51 8.57L22.5 22h-6.86l-5.36-6.93L3.8 22H.54l8.04-9.19L1.5 2h7l4.82 6.2L18.244 2zm-1.2 18h1.9L7.1 3.9H5.1L17.044 20z"/>
+    </svg>
+);
+
 // --- AUTO-ROTATING IMAGE SLIDER ---
 function ProjectImageSlider({ images, title, dark }) {
     const [currentIdx, setCurrentIdx] = useState(0);
@@ -325,24 +338,7 @@ export default function Portfolio() {
                             </a>
                         </div>
 
-                        {/* <div className="flex gap-2 text-sm font-semibold pt-2">
-                            {[
-                                ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
-                                ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon]
-                            ].map(([label, href, Icon]) => (
-                                <a
-                                    key={label}
-                                    href={href}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className={`flex-1 text-center py-3 rounded-xl border text-sm transition-colors duration-200 ${cMuted} ${dark ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500' : 'bg-slate-50 border-slate-200 hover:border-emerald-500'}`}
-                                >
-                                  <Icon />  {label}
-                                </a>
-                            ))}
-                        </div> */}
-
-                        <div className="flex gap-3 text-sm font-semibold pt-2">
+                        {/* <div className="flex gap-3 text-sm font-semibold pt-2">
                             {[
                                 ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
                                 ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon]
@@ -365,7 +361,33 @@ export default function Portfolio() {
                                     <span className="text-xs sm:text-sm">{label}</span>
                                 </a>
                             ))}
-                        </div>
+                        </div> */}
+
+<div className="flex gap-3 text-sm font-semibold pt-2">
+  {[
+    ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
+    ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon],
+    ['Twitter', 'https://x.com/yourhandle', XIcon]
+  ].map(([label, href, Icon]) => (
+    <a
+      key={label}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border text-sm transition-all duration-200 group ${cMuted
+        } ${dark
+          ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500 hover:-translate-y-0.5'
+          : 'bg-slate-50 border-slate-200 hover:border-emerald-500 hover:-translate-y-0.5'
+        }`}
+    >
+      <span className="flex items-center justify-center">
+        <Icon className="w-4 h-4 sm:w-5 sm:h-5 transition-all duration-200 group-hover:scale-110" />
+      </span>
+
+      <span className="text-xs sm:text-sm">{label}</span>
+    </a>
+  ))}
+</div>
                     </motion.section>
                 </main>
 
