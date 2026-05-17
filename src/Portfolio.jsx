@@ -50,7 +50,7 @@ const XIcon = () => (
         fill="currentColor"
         stroke="none"
     >
-        <path d="M18.244 2H21.5l-7.51 8.57L22.5 22h-6.86l-5.36-6.93L3.8 22H.54l8.04-9.19L1.5 2h7l4.82 6.2L18.244 2zm-1.2 18h1.9L7.1 3.9H5.1L17.044 20z"/>
+        <path d="M18.244 2H21.5l-7.51 8.57L22.5 22h-6.86l-5.36-6.93L3.8 22H.54l8.04-9.19L1.5 2h7l4.82 6.2L18.244 2zm-1.2 18h1.9L7.1 3.9H5.1L17.044 20z" />
     </svg>
 );
 
@@ -363,31 +363,31 @@ export default function Portfolio() {
                             ))}
                         </div> */}
 
-<div className="flex gap-3 text-sm font-semibold pt-2">
-  {[
-    ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
-    ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon],
-    ['Twitter', 'https://x.com/yourhandle', XIcon]
-  ].map(([label, href, Icon]) => (
-    <a
-      key={label}
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border text-sm transition-all duration-200 group ${cMuted
-        } ${dark
-          ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500 hover:-translate-y-0.5'
-          : 'bg-slate-50 border-slate-200 hover:border-emerald-500 hover:-translate-y-0.5'
-        }`}
-    >
-      <span className="flex items-center justify-center">
-        <Icon className="w-4 h-4 sm:w-5 sm:h-5 transition-all duration-200 group-hover:scale-110" />
-      </span>
+                        <div className="flex gap-3 text-sm font-semibold pt-2">
+                            {[
+                                ['GitHub', 'https://github.com/ObiyomBright', GithubIcon],
+                                ['LinkedIn', 'https://www.linkedin.com/in/bright-obiyom-4b0189237/', LinkedinIcon],
+                                ['Twitter', 'https://x.com/yourhandle', XIcon]
+                            ].map(([label, href, Icon]) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border text-sm transition-all duration-200 group ${cMuted
+                                        } ${dark
+                                            ? 'bg-[#141419] border-[#1c1c21] hover:border-emerald-500 hover:-translate-y-0.5'
+                                            : 'bg-slate-50 border-slate-200 hover:border-emerald-500 hover:-translate-y-0.5'
+                                        }`}
+                                >
+                                    <span className="flex items-center justify-center">
+                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 transition-all duration-200 group-hover:scale-110" />
+                                    </span>
 
-      <span className="text-xs sm:text-sm">{label}</span>
-    </a>
-  ))}
-</div>
+                                    <span className="text-xs sm:text-sm">{label}</span>
+                                </a>
+                            ))}
+                        </div>
                     </motion.section>
                 </main>
 
@@ -397,7 +397,7 @@ export default function Portfolio() {
                     className="grid grid-cols-2 md:grid-cols-4 gap-4 class-grid-stats"
                 >
                     {[
-                        { value: "05+", label: "Completed Products" },
+                        { value: "28+", label: "Completed Products" },
                         { value: "100%", label: "Mobile-First Layouts" },
                         { value: "Secure", label: "Architecture Layouts" },
                         { value: "Optimized", label: "Database Operations" }
@@ -425,14 +425,14 @@ export default function Portfolio() {
                     </div> */}
 
                     <div className={`border-b-2 pb-3 flex items-baseline justify-between ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
-  <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
-    Featured Production Applications
-  </h2>
+                        <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
+                            Featured Production Applications
+                        </h2>
 
-  <span className={`text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
-    Total Showcase ({projects.length})
-  </span>
-</div>
+                        <span className={`text-xs md:text-sm font-semibold px-3 py-1 rounded-lg border ${dark ? 'bg-[#141419] text-slate-200 border-[#1c1c21]' : 'bg-slate-100 text-slate-800 border-slate-200'}`}>
+                            Total Showcase ({projects.length})
+                        </span>
+                    </div>
 
                     <motion.div
                         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, margin: "-60px" }} transition={{ staggerChildren: 0.12 }}
@@ -481,7 +481,7 @@ export default function Portfolio() {
                 {/* --- WORK EXPERIENCE TIMELINE --- */}
                 <section id="experience" className="flex flex-col gap-6">
                     <div className={`border-b-2 pb-3 ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
-                        <h2 className={`text-3xl font-black ${cStrong}`}>
+                        <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
                             Professional Timeline
                         </h2>
                     </div>
@@ -514,9 +514,9 @@ export default function Portfolio() {
                 {/* --- TECH SKILLS GRID --- */}
                 <section id="skills" className="flex flex-col gap-6">
                     <div className={`border-b-2 pb-3 ${dark ? 'border-[#1c1c21]' : 'border-slate-200'}`}>
-                        <h2 className={`text-3xl font-black ${cStrong}`}>
-                            Technical Skills Matrices
-                        </h2>
+                       <h2 className={`text-xl md:text-3xl font-black ${cStrong}`}>
+  Technical Skills Matrices
+</h2>
                     </div>
 
                     <motion.div
