@@ -531,7 +531,8 @@ export default function Portfolio() {
                                 key={idx}
                                 className={`${cCardSm} p-6 flex flex-col gap-4`}
                             >
-                                <h3 className={`text-base font-black m-0 ${cStrong}`}>{skillGroup.category}</h3>
+                                {/* <h3 className={`text-base font-black m-0 ${cStrong}`}>{skillGroup.category}</h3> */}
+                                <h3 className={`text-base text-emerald-600 dark:text-emerald-400 font-black m-0`}>{skillGroup.category}</h3>
                                 <div className="flex flex-wrap gap-2 pt-1">
                                     {skillGroup.items.map((skill, sIdx) => (
                                         <span
