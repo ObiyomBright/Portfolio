@@ -560,7 +560,7 @@ export default function Portfolio() {
                         </div>
                         <a
                             href="mailto:brightobiyom2@gmail.com"
-                            className={`shrink-0 whitespace-nowrap px-7 py-4 rounded-xl font-bold text-sm transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+                            className={`shrink-0 whitespace-nowrap px-7 py-3 md:py-4 rounded-xl font-bold text-sm transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:-translate-y-0.5 ${dark ? 'bg-white text-black hover:bg-slate-100' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
                         >
                             Get In Touch
                         </a>
@@ -568,7 +568,7 @@ export default function Portfolio() {
 
                     <div className={`p-6 flex flex-col justify-center items-center text-center gap-1.5 ${cCardSm}`}>
                         <span className={`text-sm font-bold ${dark ? 'text-slate-100' : 'text-slate-800'}`}>© {new Date().getFullYear()} BRIGHT</span>
-                        <span className={`text-xs font-medium ${dark ? 'text-slate-400' : 'text-slate-500'}`}>Crafted with React & Framer Motion</span>
+                        <span className={`text-xs font-bold ${dark ? 'text-slate-400' : 'text-slate-500'}`}>Crafted with React & Framer Motion</span>
                     </div>
                 </motion.footer>
 
