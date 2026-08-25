@@ -152,6 +152,29 @@ export default function Portfolio() {
             ],
             link: "https://e-commerce-site-r8rl.onrender.com"
         },
+        {
+            title: "SIFT AI",
+            category: "AI Legal Research Assistant",
+            desc: "An AI-powered legal research assistant that lets lawyers query multiple PDFs and receive evidence-backed answers with verifiable citations, enhanced with live web research.",
+            images: [
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678586/Screenshot_from_2026-08-25_18-10-31_p2ypwu.png",
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678586/Screenshot_from_2026-08-25_18-20-41_oskuw3.png",
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678586/Screenshot_from_2026-08-25_18-22-41_ijodht.png"
+            ],
+            link: "https://sift-ai-bice.vercel.app/"
+        },
+        {
+            title: "Professional Portfolio",
+            category: "Personal Branding Website",
+            desc: "A sleek video editor portfolio built to showcase creative work and visual storytelling while delivering fast, seamless performance despite hosting large video assets.",
+            images: [
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678586/Screenshot_from_2026-08-25_18-09-09_ok4wwf.png",
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678586/Screenshot_from_2026-08-25_18-09-43_nrfblq.png",
+                "https://res.cloudinary.com/dfvuecjwk/image/upload/f_auto,q_auto,w_1200/v1787678587/Screenshot_from_2026-08-25_18-09-17_c7tpqd.png"
+            ],
+            link: "https://osi-porfolio.vercel.app/"
+        },
+
         // {
         //     title: "Intelligent Phishing Detection Engine",
         //     category: "Cybersecurity Dashboard",
