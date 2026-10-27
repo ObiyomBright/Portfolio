@@ -347,7 +347,7 @@ export default function Portfolio() {
                                 Detailed background layout covering my technical proficiency matrices and professional experience histories.
                             </p>
                             {/* <a
-                                href="https://drive.google.com/file/d/12-I88Qpx20wDfTpoQ5qX8kABr5vODiBd/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1rWUlvwGcc0jiQhIVCP-Qm-TMA_SG_JaK/view?usp=drivesdk"
                                 download="Bright_Obiyom_Software_Engineer_Resume.pdf"
                                 className="inline-flex items-center justify-center py-3 px-4 rounded-xl bg-emerald-600 text-white font-semibold text-sm transition-colors duration-200 hover:bg-emerald-700"
                             >
