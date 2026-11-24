@@ -355,7 +355,7 @@ export default function Portfolio() {
                             </a> */}
 
                             <a
-                                href="https://drive.google.com/uc?export=download&id=12-I88Qpx20wDfTpoQ5qX8kABr5vODiBd"
+                                href="https://drive.google.com/file/d/19mKViv0QkW4-We99ArHkP5GWgqnZX7zk/view?usp=drivesdk"
                                 className="inline-flex items-center justify-center py-3 px-4 rounded-xl bg-emerald-600 text-white font-semibold text-sm transition-colors duration-200 hover:bg-emerald-700"
                             >
                                 Download Resume (PDF)
